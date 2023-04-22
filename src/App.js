@@ -1,9 +1,11 @@
-import './App.css';
-import Home from './component/Home.js'
+import "./App.css";
+import FormOne from "./component/FormOne";
+import FormTwo from "./component/FormTwo";
 function App() {
   return (
     <div className="App">
-      <Home />
+      <FormOne />
+      <FormTwo />
     </div>
   );
 }
