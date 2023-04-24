@@ -6,7 +6,7 @@ const initialValue = {
   u_phone: "",
 };
 
-const FormOne = () => {
+const AppOne = () => {
   const [inputValue, setInputValue] = useState(initialValue);
   const [formValue, setFormValue] = useState([]);
   const [saveContact, setSaveContact] = useState(false);
@@ -68,11 +68,11 @@ const FormOne = () => {
   };
 
   return (
-    <div className="container bg-dark p-5">
+    <div className="container bg-dark p-5 mt-5">
       <div className="row g-2">
         <div className="col-12 m-auto">
-          <div className="card p-5 ">
-            <div className="row">
+          <div className="card p-5">
+            <div className="row pb-5">
               <h1 className="text-center">Contact-Manager-Task-App</h1>
               <div className="col-12 mb-3">
                 <label className="form-label">Enter Name</label>
@@ -107,11 +107,8 @@ const FormOne = () => {
                   className=" mt-1 form-control"
                 />
               </div>
-              <div className="text-center mt-5 m-auto">
-                <button
-                  className=" btn btn-primary"
-                  onClick={formSumbithandler}
-                >
+              <div className="text-center mt-3 m-auto">
+                <button className="btn btn-primary" onClick={formSumbithandler}>
                   {saveContact ? "Update" : "Save Contact"}
                 </button>
               </div>
@@ -190,4 +187,4 @@ const FormOne = () => {
   );
 };
 
-export default FormOne;
+export default AppOne;
